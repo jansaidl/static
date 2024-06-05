@@ -1,0 +1,12 @@
+zerops:
+  - setup: static
+    build:
+      os: alpine
+      base: alpine@latest
+      deployFiles: index.html
+    run:
+      base: static
+      routing:
+        redirects:
+          - from: /*
+            to: /index.html
