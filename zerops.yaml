@@ -1,7 +1,6 @@
 zerops:
   - setup: static
     build:
-      base: alpine@latest
       deployFiles: index.html
     run:
       base: static
