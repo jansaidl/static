@@ -6,7 +6,3 @@ zerops:
       deployFiles: index.html
     run:
       base: static
-      routing:
-        redirects:
-          - from: /*
-            to: /index.html
