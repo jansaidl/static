@@ -4,4 +4,3 @@ zerops:
       deployFiles: index.html
     run:
       base: static
-
