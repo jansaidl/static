@@ -2,17 +2,10 @@ zerops:
   - setup: static
     build:
       deployFiles: index.html
-      buildCommands:
-        - echo "build commands - requirements.txt"
-        - cat requirements.txt
-      addToRunPrepare:
-        - requirements.txt
     run:
-      prepareCommands:
-        - echo "prepare commands - requirements.txt"
-        - cat requirements.txt
-      initCommands:
-        - echo "init commands - requirements.txt"
-        - cat requirements.txt
       base: static
+      routing:
+        redirect:
+        - from: /*
+          to: index.html
 
